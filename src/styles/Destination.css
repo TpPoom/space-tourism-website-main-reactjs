@@ -1,0 +1,226 @@
+.destination_background {
+    background: url(../assets/destination/background-destination-desktop.jpg) center/cover no-repeat;
+}
+
+.destination-block-1 {
+    flex: 50%;
+    max-width: 50vw;
+    height: 100%;
+    padding: 3% 0 8% 12%;
+}
+
+.destination-block-2 {
+    flex: 50%;
+    max-width: 50vw;
+    height: 100%;
+    padding: 3% 0 8% 6%;
+}
+
+.destination_content {
+    max-width: 30rem;
+}
+
+.destination_header h2 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--light--clr);
+    margin: 0 0 3em 0;
+}
+
+.destination_header h2 b {
+    color: var(--half-transparent--clr);
+    font-weight: bold;
+}
+
+.destination_content h1 {
+    font-family: "Bellefair", serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 6.5rem;
+    color: var(--light--clr);
+    margin: 1.2rem 0;
+}
+
+.destination_content p {
+    font-family: "Barlow", sans-serif;
+    color: var(--fog--clr);
+    font-size: 1.22rem;
+    line-height: 1.8em;
+}
+
+.destination_footer {
+    display: flex;
+    gap: 4rem;
+    margin-top: 4rem;
+    border-top: 1px solid var(--half-transparent--clr);
+}
+
+.destination_footer h6 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .1em;
+    color: var(--half-transparent--clr);
+    margin: 2em 0 1em 0;
+}
+
+.destination_footer h5 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--light--clr);
+}
+
+
+
+/* -------Navbar------- */
+.destination_nav {
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+}
+
+.destination_nav ul {
+    list-style-type: none;
+    height: 6rem;
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.destination_nav li {
+    display: block;
+    color: var(--fog--clr);
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    text-align: center;
+    padding: 0 0 .6rem 0;
+    margin-right: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.destination_nav li::after {
+    content: '';
+    position: relative;
+    top: .6rem;
+    display: block;
+    width: 0%;
+    height: 3px;
+    background: var(--half-transparent--clr);
+    transition: width .3s;
+}
+
+.destination_nav li:hover::after {
+    width: 100%;
+}
+
+.destination_nav .active {
+    color: var(--light--clr);
+}
+
+.destination_nav .active::after {
+    content: '';
+    position: relative;
+    top: .6rem;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: var(--light--clr);
+}
+
+@media screen and (max-width: 1300px) {
+    .destination-block-1 {
+        padding: 3% 0 8% 5%;
+    }
+    
+    .destination-block-2 {
+        padding: 3% 0 8% 0%;
+    }
+}
+
+@media screen and (max-width: 1008px) {
+    .destination_background {
+        background: url(../assets/destination/background-destination-tablet.jpg) center/cover no-repeat;
+    }
+    
+    .destination-block-1 {
+        flex: 100%;
+        max-width: 100vw;
+        width: 100%;
+        padding: 8rem 0 0 0;
+    }
+
+    .destination_header {
+        margin-left: 3.25rem;
+    }
+    
+    .destination_img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination-block-2 {
+        flex: 100%;
+        max-width: 100vw;
+        width: 100%;
+        padding: 6rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .destination_nav {
+        margin-top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .destination_nav ul {
+        width: 20rem;
+    }
+
+    .destination_content {
+        max-width: 70%;
+    }
+
+    .destination_footer {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .destination_background {
+        background: url(../assets/destination/background-destination-mobile.jpg) center/cover no-repeat;
+    }
+    
+    .destination_footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .destination_img img {
+        width: 275px;
+    }
+
+    .destination_content h1 {
+        font-size: 4rem;
+    }
+
+    .destination_nav li {
+        margin-right: 0;
+    }
+}

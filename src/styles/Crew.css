@@ -1,0 +1,221 @@
+.crew_background {
+    background: url(../assets/crew/background-crew-desktop.jpg) center/cover no-repeat;
+}
+
+.crew-block-1 {
+    flex: 50%;
+    max-width: 50vw;
+    height: 100%;
+    padding: 3% 0 8% 12%;
+}
+
+.crew-block-2 {
+    flex: 50%;
+    max-width: 50vw;
+    height: 100%;
+}
+
+.crew_content {
+    max-width: 42rem;
+}
+
+.crew_header h2 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--light--clr);
+    margin-bottom: 8rem;
+}
+
+.crew_header h2 b {
+    color: var(--half-transparent--clr);
+    font-weight: bold;
+}
+
+.crew_img img {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    height: 80%;
+}
+
+.crew_img_phone {
+    display: none;
+}
+
+.crew_content h1 {
+    font-family: "Bellefair", serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 3.8rem;
+    color: var(--light--clr);
+    margin: 1.5rem 0;
+}
+
+.crew_content h2 {
+    font-family: "Bellefair", serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: .1em;
+    color: var(--half-transparent--clr);
+}
+
+.crew_content p {
+    font-family: "Barlow", sans-serif;
+    color: var(--fog--clr);
+    font-size: 1.22rem;
+    line-height: 1.8em;
+    width: 30rem;
+}
+
+
+
+/* -------Navbar------- */
+.crew_nav {
+    margin: 6rem auto 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.crew_nav ul {
+    list-style-type: none;
+    width: 25%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.crew_nav li {
+    display: block;
+    background-color: var(--half-transparent--clr);
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.crew_nav .active {
+    background-color: var(--light--clr);
+}
+
+@media screen and (max-width: 1300px) {
+    .crew-block-1 {
+        padding: 3% 0 8% 5%;
+    }
+}
+
+@media screen and (max-width: 1008px) {
+    .crew_background {
+        background: url(../assets/crew/background-crew-tablet.jpg) center/cover no-repeat;
+    }
+
+    .crew-block-1 {
+        flex: 100%;
+        max-width: 100vw;
+        width: 100%;
+        padding: 8rem 0 0 0;
+    }
+
+    .crew_header {
+        margin-left: 3.25rem;
+    }
+
+    .crew_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .crew_content p {
+        width: 70%;
+    }
+
+    .crew_nav {
+        margin-top: 4rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .crew_nav ul {
+        width: 10rem;
+    }
+
+    .crew-block-2 {
+        flex: 100%;
+        max-width: 100vw;
+        width: 100%;
+        padding-top: 6rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .crew_img img {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: -3px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .crew_background {
+        background: url(../assets/crew/background-crew-mobile.jpg) center/cover no-repeat;
+    }
+
+    .crew_img_phone {
+        display: block;
+        text-align: center;
+        margin: 0 auto 3rem auto;
+        border-bottom: 1px solid var(--light--clr);
+        width: 80%;
+    }
+    
+    .crew_img_phone img{
+        width: 300px;
+    }
+
+    .crew_nav {
+        margin-top: 0;
+        margin-bottom: 4rem;
+    }
+
+    .crew-block-2 {
+        display: none;
+    }
+
+    .crew-block-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .crew_content {
+        margin-bottom: 4rem;
+    }
+
+    .crew_header { order: 1; }
+    .crew_img_phone { order: 2; }
+    .crew_content { order: 4; }
+    .crew_nav { order: 3; }
+}
+
+@media screen and (max-width: 475px) {
+    .crew_img_phone img {
+        width: 240px;
+    }
+
+    .crew_content h1 {
+        font-size: 2.5rem;
+    }
+
+    .crew_content h2 {
+        font-size: 1.5rem;
+    }
+}

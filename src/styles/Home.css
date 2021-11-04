@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@300&family=Bellefair&display=swap');
+
+:root {
+    --dark--clr: hsl(230, 35%, 7%);
+    --fog--clr: hsl(231, 77%, 90%);
+    --light--clr: hsl(0, 0%, 100%);
+    --half-transparent--clr: rgba(255, 255, 255, 0.5);
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10%;
+    align-items: center;
+    display: flex;
+}
+
+.home_background {
+    background: url(../assets/home/background-home-desktop.jpg) center/cover no-repeat;
+}
+
+.home-block-1 {
+    flex: 50%;
+    max-width: 50vw;
+    height: 100%;
+    padding: 11% 0 8% 12%;
+}
+
+.home-block-2 {
+    flex: 50%;
+    max-width: 50vw;
+    height: 100%;
+    padding: 18% 0 8% 20%;
+}
+
+.home_content {
+    max-width: 30rem;
+}
+
+.home_content h1 {
+    font-family: "Bellefair", serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 10rem;
+    color: var(--light--clr);
+    margin-bottom: 2rem;
+}
+
+.home_content h2 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--fog--clr);
+    margin-bottom: 2rem;
+}
+
+.home_content p {
+    font-family: "Barlow", sans-serif;
+    color: var(--fog--clr);
+    font-size: 1.22rem;
+    line-height: 1.8em;
+}
+
+.home_explore a{
+    background-color: var(--light--clr);
+    color: var(--dark--clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 18rem;
+    height: 18rem;
+    text-decoration: none;
+
+    font-size: 2rem;
+    font-family: "Bellefair", serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: black;
+    letter-spacing: .25rem;
+}
+
+@media screen and (max-width: 1300px) {
+    .home-block-1 {
+        padding: 11% 0 8% 5%;
+    }
+    
+    .home-block-2 {
+        padding: 18% 0 8% 13%;
+    }
+}
+
+@media screen and (max-width: 1008px) {
+    section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .home_background {
+        background: url(../assets/home/background-home-tablet.jpg) center/cover no-repeat;
+    }
+    
+    .home-block-1 {
+        flex: 100%;
+        max-width: 100vw;
+        padding: 6rem 0;
+        text-align: center;
+    }
+    
+    .home-block-2 {
+        flex: 100%;
+        max-width: 100vw;
+        padding: 6rem 0;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .home_background {
+        background: url(../assets/home/background-home-mobile.jpg) center/cover no-repeat;
+    }
+
+    .home_content h1 {
+        font-size: 6rem;
+    }
+
+    .home_content h2 {
+        font-size: 1.2rem;
+    }
+}
