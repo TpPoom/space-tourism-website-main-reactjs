@@ -15,6 +15,26 @@ section {
     display: flex;
 }
 
+section::after {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    z-index: -1;
+    content: url("../assets/home/background-home-mobile.jpg")
+             url("../assets/home/background-home-tablet.jpg")
+             url("../assets/home/background-home-desktop.jpg")
+             url("../assets/destination/background-destination-mobile.jpg")
+             url("../assets/destination/background-destination-tablet.jpg")
+             url("../assets/destination/background-destination-desktop.jpg")
+             url("../assets/crew/background-crew-mobile.jpg")
+             url("../assets/crew/background-crew-tablet.jpg")
+             url("../assets/crew/background-crew-desktop.jpg")
+             url("../assets/technology/background-technology-mobile.jpg")
+             url("../assets/technology/background-technology-tablet.jpg")
+             url("../assets/technology/background-technology-desktop.jpg")
+}
+
 .home_background {
     background: url(../assets/home/background-home-desktop.jpg) center/cover no-repeat;
 }
